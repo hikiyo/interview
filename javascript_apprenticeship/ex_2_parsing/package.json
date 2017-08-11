@@ -11,12 +11,16 @@
     "babel-watch": "^2.0.7"
   },
   "scripts": {
-    "start": "babel-watch mission.js"
+    "start": "babel-watch index.js"
   },
   "babel": {
     "presets": [
       "es2015",
       "react"
     ]
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }

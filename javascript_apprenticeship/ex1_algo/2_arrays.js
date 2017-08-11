@@ -4,11 +4,19 @@
 * */
 
 var myArray = [1, 2, 3, 5, 1, 5, 9, 1, 2, 8, 8, 42, 76, 89, 76, 12];
+uniqueArray = myArray.filter(function(item, pos) {
+    return myArray.indexOf(item) == pos;
+});
 
-
+console.log(uniqueArray);
 /*
 * Given an array of integers, find the largest difference between two elements
 * such that the element of lesser value must come before the greater element
 * */
 
 var array = [7, 8, 4, 9, 9, 15, 3, 1, 10];
+array.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(array);
