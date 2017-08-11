@@ -1,7 +1,6 @@
  /*
  * Given a string, reverse each word in a the sentence
  * */
-var Anagram = require('./Anagram');
 
  let reverse = "Mary would you mary me";
 console.log(reverse.split('').reverse().join(""));
