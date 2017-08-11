@@ -1,6 +1,5 @@
 import json from './data-json'
 
-console.log(json);
 
 /*
 * Considering the following JSON : Creating a set of class which make working this the provided JSON Stream easy
@@ -11,9 +10,18 @@ console.log(json);
 *                   - And then npm start (or yarn start)
 */
 
+class GetData {
+    constructor(json) {
+        this.json = json;
+    }
 
+    static getValue(json, prop) {
+        return `${json.data + prop}`;
+    }
+}
 
-
+let toto = new GetData(json);
+console.log(toto.getValue(name));
 /*
 * Bonus Question : Once done, create a React component which will display this mission data
 * You can find inspiration on example.png
